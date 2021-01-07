@@ -175,7 +175,6 @@ echo "Remediating Control 4.1.3"
 # 4.1.3 - Ensure auditing for processes that start prior to auditd is enabled (Scored)
 sleep .1
 echo 'GRUB_CMDLINE_LINUX="audit=1"' >> /etc/default/grub
-echo 'Accops HySecure' > /etc/system-release
 grub2-mkconfig -o /boot/grub2/grub.cfg > /dev/null 2>&1
 
 echo "Remediating Control 4.1.4"
